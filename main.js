@@ -12,3 +12,17 @@ div_de_la_imagem.forEach((div_de_la_imagem) => { // foreach para recorrer cada d
         });
     }
 });
+
+const formulario_Nosotros = document.querySelectorAll(".formulario_Nosotros_js");
+
+formulario_Nosotros.forEach((formulario_Nosotros) => {
+    const input_formulario = formulario_Nosotros.querySelector("input");
+    if (input_formulario){
+        formulario_Nosotros.addEventListener('submit', (evento) => {
+            evento.preventDefault(); // Evita la recarga de la página
+            const email = formulario_Nosotros.querySelector('input[name="correo_electronico"]').value;
+            console.log('Enviando:', { email });
+        });
+    }
+    
+});
