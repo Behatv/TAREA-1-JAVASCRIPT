@@ -24,6 +24,20 @@ div_de_la_imagem_inicio.forEach((div_de_la_imagem_inicio) => {
     }
 });
 
+const doble_boton = document.querySelector(".boton_dobleclick_js");
+const mensaje_dclick = document.querySelector(".mensaje_dobleclick");
+
+doble_boton.addEventListener('dblclick', (evento) => {
+    evento.preventDefault();
+    mensaje_dclick.textContent = '¡Doble clic detectado!';
+    mensaje_dclick.style.color = 'green';
+    console.log("Se hizo doble click");
+
+    setTimeout(() => {
+        mensaje_dclick.textContent = '';
+    }, 5000);
+});
+
 
 // PAGINA NOSOTROS
 const div_de_la_imagem = document.querySelectorAll(".resaltar_elemento_js");
