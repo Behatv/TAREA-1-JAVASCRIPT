@@ -41,7 +41,7 @@
                             <!-- buscador  -->
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                                <button class="btn btn-outline-success configuracion_boton" type="submit" 
+                                <button class="btn btn-outline-success configuracion_boton boton_click_js" type="submit" 
                                     style="--bs-btn-color: #003366; --bs-btn-border-color: #003366; --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #003366; --bs-btn-hover-border-color: #003366; --bs-btn-focus-shadow-rgb: 0, 51, 102; --bs-btn-active-color: #fff; --bs-btn-active-bg: #003366; --bs-btn-active-border-color: #003366; --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); --bs-btn-disabled-color: #003366; --bs-btn-disabled-bg: transparent; --bs-btn-disabled-border-color: #003366; --bs-gradient: none;">
                                     Buscar
                                 </button>
@@ -90,37 +90,21 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="row"> 
-                <div class="col"> 
-                    <div id="carouselExampleIndicators" class="carousel slide" >
-                        <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="imagenes/carrusel_paisaje1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/carrusel_paisaje2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagenes/carrusel_paisaje3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+
+        <div class="container-lg">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner ">
+                  <div class="carousel-item active resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item resaltar_elemento_js">
+                    <img src="imagenes/carrusel_paisaje3.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
     
         <br>    <br>    <br>
@@ -133,7 +117,7 @@
                 <div class="card-body">
                   <h5 class="card-title">🧭 Tu viaje comienza con un solo paso</h5>
                   <p class="card-text">Explora nuestro sitio, conoce los destinos que tenemos para ti y encuentra la inspiración para tu próxima aventura. Desde el primer contacto hasta tu regreso a casa, estaremos contigo en cada etapa. Con nosotros, viajar es fácil, seguro y emocionante. ✈️🌍</p>
-                  <a href="#" class="btn btn-primary"> ¡Viaja ya!</a>
+                  <a href="#" class="btn btn-primary boton_click_js"> ¡Viaja ya!</a>
                 </div>
             </div>
             <div class="card" style="width: 20rem;">
@@ -143,7 +127,7 @@
                 <div class="card-body">
                   <h5 class="card-title">✈️ ¿Qué ofrecemos?</h5>
                   <p class="card-text">En nuestra agencia de viajes te ofrecemos todo lo que necesitas para vivir una experiencia completa: paquetes turísticos personalizados, reservas de vuelos y hospedaje, traslados, seguros de viaje y asesoría especializada. Nos encargamos de cada detalle para que tú solo te dediques a disfrutar. 🌎✨</p>
-                  <a href="#" class="btn btn-primary">¡Viaja ya!</a>
+                  <a href="#" class="btn btn-primary boton_click_js">¡Viaja ya!</a>
                 </div>
             </div>
         </div>
@@ -160,8 +144,8 @@
                           <h5 class="card-title">✈️ Bienvenido a tu próximo viaje</h5>
                           <p class="card-text">🌍 ¡Bienvenido a Otakar Agency!
                             En Otakar Agency, nos apasiona ayudarte a descubrir el mundo. Somos una agencia de viajes dedicada a brindarte experiencias únicas, adaptadas a tus gustos, necesidades y presupuesto. Ya sea que sueñes con playas paradisíacas, ciudades llenas de historia o escapadas de aventura, aquí encontrarás el destino ideal.</p>
-                          <a href="#" class="btn btn-primary">Explora tus próximos destinos</a>
-                          <button type="button" class="btn btn-secondary">Contáctanos ahora</button>
+                          <a href="#" class="btn btn-primary boton_click_js">Explora tus próximos destinos</a>
+                          <button type="button" class="btn btn-secondary boton_click_js">Contáctanos ahora</button>
                         </div>
                         <div class="card-footer text-body-secondary">
                             Más de 5 años ayudando a personas a cumplir sus sueños de viajar.
@@ -172,6 +156,18 @@
                     </div>
                 </div>
             </div>
+
+        <div class="container-xxl">
+            <div class="iamgen_desaparece">
+                <div class="row">                 
+                    <div class="col imagen_desaparece_js">
+                        <img src="imagenes/carrusel_paisaje1.jpg" alt="YA NO HAY IMAGEN 😮"></a>
+
+                    </div>
+                </div>
+            </div> 
+        </div>  
+
     </main>
 
 

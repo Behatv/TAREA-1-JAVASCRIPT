@@ -1,3 +1,29 @@
+//PAGINA INICIO
+
+const botones = document.querySelectorAll(".boton_click_js");
+
+botones.forEach((boton) => {
+    boton.addEventListener('click', (evento) => {
+        evento.preventDefault();
+        console.log("se hizo click en el boton");
+    });
+});
+
+const div_de_la_imagem_inicio = document.querySelectorAll(".imagen_desaparece_js");
+
+div_de_la_imagem_inicio.forEach((div_de_la_imagem_inicio) => {
+    const imagen = div_de_la_imagem_inicio.querySelector("img"); // Busca la imagen dentro del div
+    if (imagen) {
+        imagen.addEventListener('load', () => {
+        });
+
+        setTimeout(() => {
+            imagen.src = imagen.dataset.src;
+        }, 5000);
+    }
+});
+
+
 // PAGINA NOSOTROS
 const div_de_la_imagem = document.querySelectorAll(".resaltar_elemento_js");
 
