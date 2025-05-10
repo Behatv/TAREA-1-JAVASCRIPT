@@ -2,12 +2,13 @@
 
 const botones = document.querySelectorAll(".boton_click_js");
 
-botones.forEach((boton) => {
-    boton.addEventListener('click', (evento) => {
+botones.forEach((botones) => { // foreach para recorrer cada boton
+    botones.addEventListener('click', (evento) => {
         evento.preventDefault();
         console.log("se hizo click en el boton");
     });
 });
+
 
 const div_de_la_imagem_inicio = document.querySelectorAll(".imagen_desaparece_js");
 
