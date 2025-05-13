@@ -1,5 +1,4 @@
 
-
 const formulariosContacto = document.querySelectorAll(".formulario_Contacto_js");
 
 formulariosContacto.forEach((formulario) => {
@@ -14,11 +13,11 @@ formulariosContacto.forEach((formulario) => {
         const elegir_op = formulario.querySelector('select[name="elegir_op"]').value;
 
         if (!nombre || !apellido || !email || !telefono || !usuario || !elegir_op) {
-            alert("Por favor, completa todos los campos.");
+            alert("Por favor, completa todos los campos");
             return;
         }
 
-        alert(`¡Gracias, ${nombre} ${apellido}! Te contactaremos a ${email}.`);
+        alert(`Gracias, ${nombre} ${apellido}! Te contactaremos a ${email}.`);
     });
 });
 
