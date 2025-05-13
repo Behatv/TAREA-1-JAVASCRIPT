@@ -35,13 +35,11 @@ const formulario_Nosotros2 = document.querySelectorAll(".formulario_Nosotros_js"
 formulario_Nosotros2.forEach((formulario_Nosotros2) => {
     const input_formulario2 = formulario_Nosotros2.querySelector("input");
     if (input_formulario2){
-        const capturar_teclas_input = document.querySelectorAll(".capturar_teclas_input_js");
         const teclaDiv = document.querySelector(".div_tecla_js");
-        if (capturar_teclas_input){
-            formulario_Nosotros2.addEventListener('keydown', (evento) => {
-                teclaDiv.textContent = `Tecla presionada: ${evento.key}`;
-            });
-        }  
+
+        formulario_Nosotros2.addEventListener('keydown', (evento) => {
+            teclaDiv.textContent = `Tecla presionada: ${evento.key}`;
+        });     
     }      
 });
 
