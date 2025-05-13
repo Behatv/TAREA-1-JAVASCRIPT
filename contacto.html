@@ -152,7 +152,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                  <input type="number" class="form-control" placeholder="Numero de Telefono" aria-label="Telefono">
+                                  <input type="number" class="form-control" placeholder="Numero de Telefono" aria-label="Telefono" name="telefono">
                                 </div>
                             </div>
                       
@@ -164,14 +164,14 @@
         
         
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" aria-describedby="Usuario_ingresar">
+                                <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" aria-describedby="Usuario_ingresar" name="usuario">
                             </div>                                                                       
                               <div class="input-group">
-                                <select class="form-select" id="elegir_opcion" aria-label="Ejemplo de seleccionar y confirmar">
-                                  <option selected> Elegir...</option>
-                                  <option value="1">Quiero cotizar un viaje</option>
-                                  <option value="2">Necesito más información</option>
-                                  <option value="3">Deseo reservar ahora</option>
+                                <select class="form-select" id="elegir_opcion" name="elegir_op" aria-label="Ejemplo de seleccionar y confirmar">
+                                    <option value="">Elegir...</option>
+                                    <option value="1">Quiero cotizar un viaje</option>
+                                    <option value="2">Necesito más información</option>
+                                    <option value="3">Deseo reservar ahora</option>
                                 </select>
         
                                 <button class="btn btn-outline-secondary" type="button">Confirmar</button>
@@ -209,14 +209,14 @@
         
                               <div class="input-group">
                                 <input type="file" class="form-control" id="agregar_archivo" aria-describedby="agregar archivo" aria-label="agregar un archivo">
-                                <button class="btn btn-outline-secondary" type="button" id="agregar_archivo">Confirmar</button>
+                                <button class="btn btn-outline-secondary" type="button" id="confirmar_archivo">Confirmar</button>
+                                
                               </div> <br>
                               
 
                                <div class="boton_enviar">
-                                <button type="submit" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Enviar
-                                </button>
+
+                                <button type="submit" class="btn btn-primary boton_click_contacto_js"> Enviar</button>
                                 
                                </div>
 
@@ -277,7 +277,7 @@
 
     </footer>
 
-    <script src="main.js"></script>
+    <script src="contacto.js"></script>
     <br><br>
 
 </body>
